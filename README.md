@@ -1,2 +1,2 @@
-# IONIC ANGULAR
+# IONIC-CLI ANGULAR
  ionic client use angular
