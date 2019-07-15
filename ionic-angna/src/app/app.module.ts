@@ -1,0 +1,153 @@
+import 'hammerjs';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
+
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {
+	MatCommonModule,
+	MatAutocompleteModule,
+	MatBottomSheetModule,
+	MatButtonToggleModule,  
+	MatDialogModule,
+	MatInputModule,
+	MatButtonModule, 
+	MatCheckboxModule,
+	MatFormFieldModule,
+	MatMenuModule,
+	MatPaginatorModule,
+	MatGridListModule,
+	MatRippleModule,
+	MatPseudoCheckboxModule,
+	MatLineModule,
+	MatOptionModule,
+	MatNativeDateModule,
+	MatCardModule,
+	MatBadgeModule,
+	MatChipsModule,
+	MatExpansionModule,
+	MatDividerModule,
+	MatListModule,
+	MatSelectModule,
+	MatRadioModule,
+	MatProgressSpinnerModule,
+	MatProgressBarModule,
+	MatSidenavModule,
+	MatSlideToggleModule,
+	MatSliderModule,
+	MatSnackBarModule,
+	MatSortModule,
+	MatStepperModule,
+	MatTableModule,
+	MatTabsModule,
+	MatToolbarModule,
+	MatTooltipModule,
+	MatTreeModule
+	} from '@angular/material';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [
+	BrowserModule,
+	IonicModule.forRoot(),
+    	MatCommonModule,
+	MatAutocompleteModule,
+	MatBottomSheetModule,
+	MatButtonToggleModule,  
+	MatDialogModule,
+	MatInputModule,
+	MatButtonModule, 
+	MatCheckboxModule,
+	MatFormFieldModule,
+	MatMenuModule,
+	MatPaginatorModule,
+	MatGridListModule,
+	MatRippleModule,
+	MatPseudoCheckboxModule,
+	MatLineModule,
+	MatOptionModule,
+	MatNativeDateModule,
+	MatCardModule,
+	MatBadgeModule,
+	MatChipsModule,
+	MatExpansionModule,
+	MatDividerModule,
+	MatListModule,
+	MatSelectModule,
+	MatRadioModule,
+	MatProgressSpinnerModule,
+	MatProgressBarModule,
+	MatSidenavModule,
+	MatSlideToggleModule,
+	MatSliderModule,
+	MatSnackBarModule,
+	MatSortModule,
+	MatStepperModule,
+	MatTableModule,
+	MatTabsModule,
+	MatToolbarModule,
+	MatTooltipModule,
+	MatTreeModule,
+	AppRoutingModule,
+	NoopAnimationsModule,
+	ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+  ],
+exports: [
+	BrowserModule,
+    	MatCommonModule,
+	MatAutocompleteModule,
+	MatBottomSheetModule,
+	MatButtonToggleModule,  
+	MatDialogModule,
+	MatInputModule,
+	MatButtonModule, 
+	MatCheckboxModule,
+	MatFormFieldModule,
+	MatMenuModule,
+	MatPaginatorModule,
+	MatGridListModule,
+	MatRippleModule,
+	MatPseudoCheckboxModule,
+	MatLineModule,
+	MatOptionModule,
+	MatNativeDateModule,
+	MatCardModule,
+	MatBadgeModule,
+	MatChipsModule,
+	MatExpansionModule,
+	MatDividerModule,
+	MatListModule,
+	MatSelectModule,
+	MatRadioModule,
+	MatProgressSpinnerModule,
+	MatProgressBarModule,
+	MatSidenavModule,
+	MatSlideToggleModule,
+	MatSliderModule,
+	MatSnackBarModule,
+	MatSortModule,
+	MatStepperModule,
+	MatTableModule,
+	MatTabsModule,
+	MatToolbarModule,
+	MatTooltipModule,
+	MatTreeModule
+],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
